@@ -1,0 +1,17 @@
+# 빌드 산출물
+build/
+build-*/
+DerivedData/
+
+# XcodeGen이 project.yml에서 만들어 내는 프로젝트
+*.xcodeproj
+xcuserdata/
+
+# 내 Mac의 실제 화면과 경로가 담긴 검토 자료 (공개하지 않음)
+docs/reviews/
+
+# 개인 설정
+.claude/settings.local.json
+.DS_Store
+.env
+.env.*

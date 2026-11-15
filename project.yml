@@ -1,0 +1,41 @@
+name: Scatter
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: "15.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  Scatter:
+    type: application
+    platform: macOS
+    sources: [Scatter]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.scatter
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Scatter
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        DEVELOPMENT_TEAM: ""
+        ENABLE_HARDENED_RUNTIME: NO
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+  PortBar:
+    type: application
+    platform: macOS
+    sources: [PortBar]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.portbar
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: PortBar
+        INFOPLIST_KEY_LSUIElement: YES
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        DEVELOPMENT_TEAM: ""
+        ENABLE_HARDENED_RUNTIME: NO
